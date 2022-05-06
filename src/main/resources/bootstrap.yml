@@ -1,0 +1,12 @@
+## Spring Configuration
+server:
+  port: 8090
+
+## Spring cloud config server Configuration
+spring:
+  application:
+    name: frontweb
+  cloud:
+    config:
+      enabled: true
+      uri: http://localhost:8889

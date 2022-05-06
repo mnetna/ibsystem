@@ -1,0 +1,38 @@
+name: dev-yaml
+spring:
+  datasource:
+    driver-class-name: org.postgresql.Driver
+    url:
+    username:
+    password:
+    platform: postgres
+  jpa:
+    hibernate:
+      ddl-auto: update
+    properties:
+      hibernate:
+        show-sql: true
+    database: postgresql
+    database-platform: org.hibernate.dialect.PostgreSQLDialect
+
+## API URL
+api:
+  server: gateway
+  eai:
+    hnb:
+  gateway:
+    scg: http://localhost:8091
+  bank:
+    hanati:
+  service:
+    DPO0200A:
+    DPO0100A:
+    LNO0100A:
+    MBO0100A:
+    MBO0200A:
+    CUO0100A:
+
+## File Path
+file:
+  path:
+    apk: F:/ibsystem.apk
